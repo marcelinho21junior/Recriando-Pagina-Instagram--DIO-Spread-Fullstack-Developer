@@ -1,0 +1,111 @@
+body{
+    margin: auto;
+    padding: 0;
+    background-color: aqua;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 95%;
+    width: 90%;
+    background-color: bisque;
+}
+
+.contentImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: cadetblue;
+}
+
+.img{
+    height: 90%;
+}
+
+.img1{
+    position: relative;
+    bottom:10px;
+    left: 90px;
+    height: 95%;
+    z-index: 1;
+}
+
+.img2{
+    position: relative;
+    right: 90px;
+    top: 10px;
+    height: 95%;
+    z-index: 2;
+}
+
+.contentInput{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    background-color: coral;
+}
+
+.contentInputLogin{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(62, 214, 163);
+}
+
+.contentInput h1{
+    font-size: 40px;
+}
+
+.contentInputBlockInputs{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+    width: 100%;
+    background-color: aqua;
+}
+
+.contentInputBlockInputs input{
+    border-radius: 6px;
+    height: 30%;
+    width: 50%;
+    margin: 1px 0;
+    border:1px solid rgba(0,0,0, 0.2) ;
+    background-color: rgb(234, 241, 238);
+}
+
+.contentInputBlockInputs input::-webkit-input-placeholder{
+    padding: 5px;
+}
+
+.contentInputBlockInputs button{
+    height: 25%;
+    width: 50%;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color:rgb(40, 40, 184);
+    opacity: 0.4;
+}
