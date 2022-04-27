@@ -1,7 +1,7 @@
 body{
     margin: auto;
     padding: 0;
-    background-color: aqua;
+    background-color: rgb(238, 247, 255);
 }
 
 .container{
@@ -9,7 +9,6 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: aquamarine;
 }
 
 .content{
@@ -17,8 +16,7 @@ body{
     justify-content: space-around;
     align-items: center;
     height: 95%;
-    width: 90%;
-    background-color: bisque;
+    width: 70%;
 }
 
 .contentImg{
@@ -26,8 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 50%;
-    background-color: cadetblue;
+    width: 40%;
 }
 
 .img{
@@ -56,9 +53,8 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 50%;
+    width:60%;
     text-align: center;
-    background-color: coral;
 }
 
 .contentInputLogin{
@@ -66,13 +62,15 @@ body{
     justify-content:center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
-    height: 60%;
-    background-color: rgb(62, 214, 163);
+    width: 70%;
+    height: 70%;
+    border: 1px solid rgba(0,0,0, 0.5);
+    background-color: white;
 }
 
-.contentInput h1{
-    font-size: 40px;
+.ContentImgTitlnsta{
+    height: 10%;
+    margin: 30px 0;
 }
 
 .contentInputBlockInputs{
@@ -82,16 +80,15 @@ body{
     flex-direction: column;
     height: 40%;
     width: 100%;
-    background-color: aqua;
 }
 
 .contentInputBlockInputs input{
     border-radius: 6px;
     height: 30%;
-    width: 50%;
+    width: 80%;
     margin: 1px 0;
     border:1px solid rgba(0,0,0, 0.2) ;
-    background-color: rgb(234, 241, 238);
+    background-color: rgb(241, 249, 248);
 }
 
 .contentInputBlockInputs input::-webkit-input-placeholder{
@@ -100,12 +97,111 @@ body{
 
 .contentInputBlockInputs button{
     height: 25%;
-    width: 50%;
+    width: 80%;
     margin: 5px 0;
+    border: rgba(0,0,0, 0.2);
     border-radius: 5px;
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
-    background-color:rgb(40, 40, 184);
-    opacity: 0.4;
+    background-color: rgba(0,149,246,.3);
+    opacity: 1;
+}
+
+.ContainerLineOr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+}
+
+.ContainerLineOr span{
+    text-align: center;
+    font-size: 25px;
+    color: rgba(0,0,0, 0.4);
+}
+
+.lineOr{
+    width: 140px;
+    border: 1px solid rgba(0,0,0, 0.3);
+    margin: 20px 25px;
+}
+
+.ContainerImgLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.ContainerImgLogin img{
+    height: 15px;
+    margin: 10px ;
+    border-radius: 10px;
+}
+
+.ContainerImgLogin p{
+    font-weight: 600;
+    color: rgb(8, 36, 160);
+}
+
+.ForgetPassword{
+    margin: 20px 0;
+    color: rgba(0,0,0,0.7);
+    font-size: 13px;
+}
+
+.ContainerCreateAccount{/*--------------------------------*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0, 0.5);
+    width: 70%;
+    height: 10%;
+    background-color: white;
+}
+
+.ContainerCreateAccount span{
+    color: rgb(56, 150, 218);
+    font-weight: 600;
+}
+
+
+/*responsividade*/
+@media(max-width:873px) {
+
+    .contentImg{
+        display: none;
+    }
+
+    .contentInput{
+        width: auto;
+    }
+}
+
+@media(max-width:400px){
+    body{
+        background-color: white;
+    }
+
+    .contentImg{
+        display: none;
+    }
+
+    .content{
+        width: auto;
+    }
+
+    .contentInput{
+        width: 100%;
+    }
+
+    .contentInputLogin{
+        border: none;
+    }
+
+    .ContainerCreateAccount{
+        border: none;
+    }
 }
